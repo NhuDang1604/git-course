@@ -1,0 +1,21 @@
+1.Giải thích các câu lệnh: git init, git add <file_name>, git add ., git
+commit -m “message”
+
+
+git init : dùng để khởi tạo 3 vùng thuộc quản lý của git 
+
+git init: khởi tạo , cấp quyền cho git quản lý thư mục
+
+git add . : add folder (tat ca cac file thuoc folder) vao vung quan ly cua git
+git add <file name> : chi add dung file do vao vung quan ly cua git
+git commit -m “message”: day file/ folder da add (staging cua git) len vung repository
+
+2. Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng
+vùng sau khi thao tác một loạt các lệnh sau (sẽ rất tuyệt nếu bạn không chạy lệnh trên
+máy thật, mà bạn suy nghĩ trong đầu để ra được kết quả; bạn sẽ nhớ rất lâu đấy ^^):
+a. Tạo 3 file: file1, file2, file3:thuoc may local, ko thuoc git
+b. Chạy lệnh: git init : git bắt đầu theo dõi các file1,file2,file3 => thuộc vùng working directory
+c. Chạy lệnh: git commit -m”init project” : đẩy file trong khu vực staging lên repository với commit message là "init project", tuy nhiên lúc này không có file nào được đẩy lên vì các file hiện đang nằm trong vùng working directory
+d. Chạy lệnh: git add file1: đẩy file1 lên từ working directory lên staging
+e. Chạy lệnh: git commit -m”add file1” : đẩy file1 lên từ staging lên repository với commit message là add file1
+f. Chạy lệnh: git add file: lỗi vì ko có file nào tên file cả
