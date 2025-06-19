@@ -1,0 +1,34 @@
+<!-- Bài tập
+Tại repo git-course, hãy tạo file lesson-3.txt để trả lời cho các câu hỏi dưới đây:
+1. Giải thích các câu lệnh:
+git commit --amend: dùng để đi đến thay đổi commit message
+git commit --amend -m”<message>”: thay đổi commit message mới
+git restore --staged <file>: đưa từ vùng staging về working directory
+git reset HEAD~1: undo commit 1 lần
+
+2. Hãy tưởng tượng có 1 folder lesson-3 mới được tạo. Hãy liệt kê các file theo từng
+vùng, liệt kê các commit và message tương ứng sau khi thao tác một loạt các lệnh sau
+(sẽ rất tuyệt vời nếu bạn không chạy trên máy tính thật, mà bạn chạy trong đầu, sẽ giúp
+bạn hiểu về Git rõ ràng hơn):
+a. Tạo 3 file: file1, file2, file3
+b. Chạy lệnh: git init => cho git quyền quản lý 3 file trên
+c. Chạy lệnh: git commit -m”init project” => tạo commit rỗng tên "init project"
+d. Chạy lệnh: git add file1 => đẩy file1 lên staging
+e. Chạy lệnh: git commit -m”add file” => đẩy file1 lên repository với commit message "add file"
+f. Chạy lệnh: git add . => đẩy các file còn lại lên staging
+g. Chạy lệnh: git restore --staged file2 => đẩy file2 từ staging về repository
+h. Chạy lệnh: git commit -m”add all files” => đẩy file3 lên repository với commit "add all files"
+i. Chạy lệnh: git reset HEAD~1 => đẩy file3 về vùng working directory
+
+3. Hãy tưởng tượng có 1 folder lesson-3-git mới được tạo ra. Hãy liệt kê các file theo
+từng vùng sau khi thao tác các lệnh sau:
+a. Chạy lệnh git init => cấp quyền cho git quản lý thư mục
+b. Tạo file file1.txt, file2.txt, oops/file3.txt. => working directory
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt
+ii. oops/
+=>git bỏ qua những file này, khi git add . sẽ không đẩy lên staging
+d. Chạy lệnh: git add . => add tất cả các file lên staging
+e. Chạy lệnh: git commit -m"init project" => đẩy các file lên repository với msg "init project"
+
+4. Push bài tập lên GitHub. 
